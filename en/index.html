@@ -1,118 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Useful Tools | Calculators, Generators, Converters</title>
-    <meta name="description" content="Free online tools: percentage calculator, BMI, currency converter, password generator and 20+ more. Works on any device.">
-    <meta name="keywords" content="calculator, converter, generator, tools, online, BMI, percentage, age, QR code, password">
-    <meta name="author" content="Useful Tools">
+    <title>Полезные инструменты | Калькуляторы, генераторы, конвертеры</title>
+    <meta name="description" content="Бесплатные онлайн инструменты: калькулятор процентов, ИМТ, конвертер валют, генератор паролей и 20+ других.">
+    <meta name="keywords" content="калькулятор, конвертер, генератор, инструменты, онлайн, ИМТ, проценты, возраст, QR код">
+    <meta name="author" content="Poleznye Instrumenty">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://poleznyeinstrumenty.github.io/en/">
-    <!-- hreflang -->
+    <link rel="canonical" href="https://poleznyeinstrumenty.github.io/">
     <link rel="alternate" hreflang="ru" href="https://poleznyeinstrumenty.github.io/">
     <link rel="alternate" hreflang="en" href="https://poleznyeinstrumenty.github.io/en/">
-    <!-- Open Graph -->
-    <meta property="og:title" content="Useful Tools">
-    <meta property="og:description" content="20+ free online tools: calculators, converters, generators. Theme switcher, responsive, two languages.">
+    <meta property="og:title" content="Полезные инструменты">
+    <meta property="og:description" content="20+ бесплатных онлайн инструментов: калькуляторы, конвертеры, генераторы.">
     <meta property="og:image" content="https://poleznyeinstrumenty.github.io/images/og-image.png">
-    <meta property="og:url" content="https://poleznyeinstrumenty.github.io/en/">
+    <meta property="og:url" content="https://poleznyeinstrumenty.github.io/">
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:locale" content="ru_RU">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Useful Tools">
-    <meta name="twitter:description" content="20+ online tools for any task">
+    <meta name="twitter:title" content="Полезные инструменты">
+    <meta name="twitter:description" content="20+ онлайн инструментов для любых задач">
     <meta name="twitter:image" content="https://poleznyeinstrumenty.github.io/images/og-image.png">
-    <!-- Schema.org (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Useful Tools",
-      "url": "https://poleznyeinstrumenty.github.io/en/",
-      "description": "Collection of free online tools",
-      "inLanguage": "en",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://poleznyeinstrumenty.github.io/en/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "name": "Полезные инструменты",
+      "url": "https://poleznyeinstrumenty.github.io/",
+      "inLanguage": "ru"
     }
     </script>
-    <!-- 60 favicon – полный список (укажите все файлы из вашей папки images/) -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../images/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../images/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../images/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../images/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../images/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="../images/apple-touch-icon-167x167.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
-    <link rel="icon" type="image/webp" sizes="16x16" href="../images/favicon-16x16.webp">
-    <link rel="icon" type="image/webp" sizes="32x32" href="../images/favicon-32x32.webp">
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
-    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
-    <link rel="mask-icon" href="../images/maskable-icon-512x512.png" color="#000000">
-    <meta name="msapplication-TileImage" content="../images/mstile-310x310.png">
-    <meta name="msapplication-TileColor" content="#000000">
-    <!-- ... добавьте сюда остальные 40 строк по аналогии (все пути должны вести на ../images/...) -->
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- 60 favicon (сокращённо, но пути правильные) -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+    <!-- добавь сюда остальные 57 строк по аналогии -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-theme="system">
     <header class="header glass">
         <div class="container header__inner">
-            <!-- Логотип SVG (переключение по теме) -->
-            <div class="logo" id="logo">
-                <svg class="logo-svg logo-light" xmlns="http://www.w3.org/2000/svg" width="812" height="230" viewBox="0 0 812 230"><path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="..."/> ... полный SVG из вашего задания для английского светлого ...</svg>
-                <svg class="logo-svg logo-dark" xmlns="http://www.w3.org/2000/svg" width="812" height="230" viewBox="0 0 812 230"><path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="..."/> ... полный SVG для английского тёмного ...</svg>
-            </div>
+            <!-- ЛОГОТИП, ССЫЛКА НА ГЛАВНУЮ -->
+            <a href="/" class="logo-link" id="logo-link">
+                <div class="logo">
+                    <!-- Русский светлый (чёрный на белом) -->
+                    <svg class="logo-svg logo-light" xmlns="http://www.w3.org/2000/svg" width="1430" height="230" viewBox="0 0 1430 230" style="height:40px; width:auto;">
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="M 0 0 L 1429.5 0 L 1430 0.5 L 1430 230 L 0.5 230 L 0 229.5 L 0 0 Z M 109 1 L 105 2 L 102 5 L 101 18 L 99 25 L 87 29 L 83 28 L 73 15 L 70 12 L 53 20 L 50 24 Q 51 35 56 42 L 56 46 L 46 56 L 43 56 L 31 50 L 24 50 L 14 65 L 13 70 L 29 84 L 26 99 L 19 102 L 8 102 L 6 103 L 2 108 Q 1 118 3 126 L 6 128 L 10 129 L 18 129 L 26 131 L 30 145 L 29 148 L 17 157 L 13 162 L 21 178 L 26 181 L 29 181 L 45 173 L 54 180 L 57 186 L 50 203 L 51 208 L 67 217 L 72 216 L 84 200 L 98 203 L 100 206 L 102 225 L 108 228 Q 114 226 125 227 L 128 223 L 128 213 L 130 205 L 132 203 L 146 200 L 156 215 L 160 217 L 163 217 L 178 208 L 179 206 L 179 202 L 172 186 L 183 174 L 188 174 L 201 181 L 205 181 L 216 163 L 215 160 L 200 148 L 200 142 L 203 133 L 206 130 L 224 128 L 227 123 Q 228 112 226 105 L 222 102 L 212 102 L 205 100 Q 200 94 200 84 L 216 70 Q 213 58 206 50 L 199 50 L 187 56 L 184 56 L 173 46 L 174 40 L 179 29 L 179 23 L 163 12 L 157 13 L 146 29 L 133 26 L 129 23 L 128 6 L 127 4 L 124 1 L 109 1 Z M 261 23 L 261 104 L 281 104 L 281 104 L 281 34 L 295 34 L 297 35 L 301 42 L 301 104 L 302 104 L 321 104 L 321 31 L 320 29 Q 317 24 311 23 L 261 23 Z M 337 54 L 331 61 L 331 98 L 332 100 L 338 104 L 384 104 L 388 102 L 391 97 L 391 62 L 389 58 L 385 54 L 337 54 Z M 415 54 L 413 55 L 408 61 L 408 84 L 403 85 L 398 91 L 398 104 L 421 104 L 425 102 L 428 97 L 428 72 L 429 69 L 435 64 L 448 64 L 448 104 L 468 104 L 468 54 L 415 54 Z M 484 54 L 478 61 L 478 98 L 479 100 L 485 104 L 531 104 L 535 102 Q 539 99 538 94 L 506 94 L 502 92 Q 497 90 498 84 L 531 84 L 533 83 L 538 77 L 538 62 L 536 58 L 532 54 L 484 54 Z M 554 54 L 548 60 L 548 74 L 568 74 L 568 64 L 582 64 L 584 65 L 588 72 L 588 84 L 568 84 L 568 94 L 581 94 L 583 95 L 588 102 L 588 124 L 575 124 L 573 123 L 568 118 L 568 114 L 548 114 L 548 128 L 549 130 L 555 134 L 601 134 L 605 132 L 608 127 L 608 92 L 606 88 L 600 84 L 603 83 L 608 77 L 608 62 L 607 59 L 602 54 L 554 54 Z M 618 54 L 618 104 L 638 104 L 638 84 L 651 84 L 655 86 L 658 92 L 658 104 L 678 104 L 678 54 L 658 54 L 658 74 L 646 74 L 642 72 L 638 68 L 638 54 L 618 54 Z M 688 54 L 688 99 L 689 101 L 694 104 L 741 104 L 745 102 L 748 97 L 748 81 L 747 79 L 742 74 L 708 74 L 708 62 L 707 59 L 703 54 L 688 54 Z M 753 54 L 753 97 L 755 101 L 761 104 L 773 104 L 773 61 L 772 59 L 767 54 L 753 54 Z M 789 54 L 783 61 L 783 98 L 784 100 L 790 104 L 836 104 L 840 102 Q 844 99 843 94 L 811 94 L 807 92 Q 802 90 803 84 L 836 84 L 838 83 L 843 77 L 843 62 L 841 58 L 837 54 L 789 54 Z M 636 113 L 636 188 L 637 190 L 643 194 L 669 194 L 671 193 L 676 187 L 676 194 L 696 194 L 696 194 L 696 113 L 677 113 L 676 114 L 676 184 L 664 184 L 661 183 L 656 178 L 656 114 L 656 113 L 636 113 Z M 706 144 L 706 194 L 726 194 L 726 174 L 739 174 L 743 176 L 746 182 L 746 194 L 766 194 L 766 144 L 746 144 L 746 164 L 734 164 L 730 162 L 726 158 L 726 144 L 706 144 Z M 782 144 L 776 151 L 776 188 L 777 190 L 783 194 L 829 194 L 833 192 L 836 187 L 836 174 L 816 174 L 816 184 L 804 184 L 800 182 L 796 178 L 796 154 L 810 154 L 813 156 L 816 162 L 817 164 L 836 164 L 836 152 L 834 148 L 830 144 L 782 144 Z M 841 144 L 842 149 L 850 154 L 861 154 L 861 155 L 861 194 L 881 194 L 881 154 L 902 154 L 900 148 L 896 144 L 841 144 Z M 913 144 L 907 150 L 907 224 L 927 224 L 927 194 L 960 194 L 964 192 L 967 187 L 967 152 L 966 149 L 961 144 L 913 144 Z M 977 144 L 977 188 L 978 190 L 984 194 L 1010 194 L 1012 195 L 1017 202 L 1017 214 L 1004 214 L 1002 213 L 997 208 L 997 204 L 977 204 L 977 218 L 978 220 L 984 224 L 1031 224 L 1034 222 L 1037 217 L 1037 144 L 1017 144 L 1017 184 L 1005 184 L 1001 182 L 997 178 L 997 144 L 977 144 Z M 1047 144 L 1047 194 L 1067 194 L 1068 160 L 1079 183 L 1080 184 L 1085 184 L 1096 161 L 1097 161 L 1097 194 L 1117 194 L 1117 144 L 1099 144 L 1094 149 L 1082 173 L 1069 148 L 1065 144 L 1047 144 Z M 1133 144 L 1127 151 L 1127 188 L 1128 190 L 1134 194 L 1180 194 L 1184 192 Q 1188 189 1187 184 L 1155 184 L 1151 182 Q 1146 180 1147 174 L 1180 174 L 1182 173 L 1187 167 L 1187 152 L 1185 148 L 1181 144 L 1133 144 Z M 1197 144 L 1197 194 L 1217 194 L 1217 174 L 1230 174 L 1234 176 L 1237 182 L 1237 194 L 1257 194 L 1257 144 L 1237 144 L 1237 164 L 1225 164 L 1221 162 L 1217 158 L 1217 144 L 1197 144 Z M 1262 144 L 1263 149 L 1271 154 L 1282 154 L 1282 155 L 1282 194 L 1302 194 L 1302 154 L 1323 154 L 1321 148 L 1317 144 L 1262 144 Z M 1328 144 L 1328 189 L 1329 191 L 1334 194 L 1381 194 L 1385 192 L 1388 187 L 1388 171 L 1387 169 L 1382 164 L 1348 164 L 1348 152 L 1347 149 L 1343 144 L 1328 144 Z M 1393 144 L 1393 187 L 1395 191 L 1401 194 L 1413 194 L 1413 151 L 1412 149 L 1407 144 L 1393 144 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="M 110.5 59 L 118.5 59 L 132.5 62 Q 144.7 66.8 153 75.5 Q 162.9 85.1 167 100.5 Q 169.8 109.2 168 122.5 L 164 135.5 L 154 151 L 134.5 164 L 123.5 167 L 105.5 167 Q 84.4 162.6 73 148.5 Q 65.8 139.7 62 127.5 L 61 107.5 Q 65.1 82.1 82.5 70 L 94.5 63 L 110.5 59 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="M 351 64 L 364.5 64 L 369 67.5 L 371 71.5 L 371 94 L 358.5 94 L 352 89.5 L 351 87.5 L 351 64 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="M 498 64 L 511.5 64 L 516 67.5 L 518 74 L 498 74 L 498 64 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="M 803 64 L 816.5 64 L 821 67.5 L 823 74 L 803 74 L 803 64 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="M 708 84 L 727.5 84 L 728 86.5 L 722.5 93 L 720.5 94 L 708 94 L 708 84 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="M 927 154 L 940.5 154 L 945 157.5 L 947 161.5 L 947 184 L 934.5 184 L 928 179.5 L 927 177.5 L 927 154 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="M 1147 154 L 1160.5 154 L 1165 157.5 L 1167 164 L 1147 164 L 1147 154 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="M 1348 174 L 1367.5 174 L 1368 176.5 L 1362.5 183 L 1360.5 184 L 1348 184 L 1348 174 Z "/>
+                        <path fill="rgb(127,127,127)" stroke="rgb(127,127,127)" stroke-width="1" opacity="0.9882352941176471" d="M 108.5 1 L 123.5 1 L 127 3.5 L 129 22.5 L 130 25 L 145.5 29 Q 153.1 22.5 157 13 L 162.5 12 L 179 22.5 L 179 28.5 L 174 39.5 L 173 45.5 L 183.5 56 L 186.5 56 L 199.5 50 L 204.5 50 L 207 51 L 216 68.5 L 209.5 76 L 200 83.5 Q 199.9 95.1 205.5 101 L 220.5 102 L 226 104.5 Q 228.4 111.6 227 122.5 L 223.5 128 L 211.5 129 L 203 131 L 200 141.5 L 200 147.5 L 215 159.5 L 216 162.5 L 204.5 181 L 200.5 181 L 187.5 174 L 182.5 174 L 172 185.5 L 179 201.5 L 179 205.5 L 178 208 L 162.5 217 L 159.5 217 L 156 214.5 L 145.5 200 L 131.5 203 L 130 204.5 L 128 212.5 L 128 222.5 L 124.5 227 Q 113.8 225.3 107.5 228 L 102 224.5 L 100 205.5 L 97.5 203 L 83.5 200 L 71.5 216 L 66.5 217 L 51 208 L 50 202.5 L 57 184.5 L 53.5 180 L 44.5 173 L 28.5 181 L 25.5 181 L 21 177.5 L 13 161.5 L 16.5 157 L 29 147.5 L 30 144.5 L 24.5 130 L 9.5 129 L 5.5 128 L 3 125.5 Q 0.6 118.4 2 107.5 L 5.5 103 L 18.5 102 L 26 98.5 L 29 88.5 L 29 83.5 L 13 69.5 L 22 51 Q 24.4 49.3 30.5 50 L 42.5 56 L 45.5 56 L 55 48 L 56 41.5 Q 51 34.5 50 23.5 L 51 21 L 69.5 12 L 73 14.5 L 83.5 29 L 94.5 27 L 99 24.5 L 101 17.5 L 102 4.5 L 104.5 2 L 108.5 1 Z M 110 59 L 97 62 L 80 72 Q 65 84 61 107 L 62 128 Q 66 140 73 149 Q 84 163 106 167 L 124 167 L 135 164 L 154 151 L 165 134 L 168 123 Q 170 109 167 101 Q 163 85 153 76 Q 145 67 133 62 L 120 59 L 110 59 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 261 23 L 310.5 23 Q 317.1 23.9 320 28.5 L 321 30.5 L 321 104 L 301.5 104 L 301 103.5 L 301 41.5 L 296.5 35 L 294.5 34 L 281 34 L 281 103.5 L 280.5 104 L 261 104 L 261 23 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 336.5 54 L 384.5 54 L 389 57.5 L 391 61.5 L 391 96.5 L 387.5 102 L 383.5 104 L 337.5 104 L 332 99.5 L 331 97.5 L 331 60.5 L 336.5 54 Z M 351 64 L 351 88 L 352 90 L 359 94 L 371 94 L 371 72 L 369 68 L 365 64 L 351 64 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 414.5 54 L 468 54 L 468 104 L 448 104 L 448 64 L 434.5 64 L 429 68.5 L 428 71.5 L 428 96.5 L 424.5 102 L 420.5 104 L 398 104 L 398 90.5 L 402.5 85 L 408 84 L 408 60.5 L 412.5 55 L 414.5 54 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 483.5 54 L 531.5 54 L 536 57.5 L 538 61.5 L 538 76.5 L 532.5 83 L 530.5 84 L 498 84 Q 497.1 89.9 501.5 92 L 505.5 94 L 538 94 Q 538.6 99.3 534.5 102 L 530.5 104 L 484.5 104 L 479 99.5 L 478 97.5 L 478 60.5 L 483.5 54 Z M 498 64 L 498 74 L 518 74 L 516 68 L 512 64 L 498 64 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 553.5 54 L 601.5 54 L 607 58.5 L 608 61.5 L 608 76.5 L 602.5 83 L 600 83.5 L 606 87.5 L 608 91.5 L 608 126.5 L 604.5 132 L 600.5 134 L 554.5 134 L 549 129.5 L 548 127.5 L 548 114 L 567.5 114 L 568 117.5 L 572.5 123 L 574.5 124 L 588 124 L 588 101.5 L 582.5 95 L 580.5 94 L 568 94 L 568 84 L 588 84 L 588 71.5 L 583.5 65 L 581.5 64 L 568 64 L 568 74 L 548 74 L 548 59.5 L 553.5 54 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 618 54 L 638 54 L 638 67.5 L 641.5 72 L 645.5 74 L 658 74 L 658 54 L 678 54 L 678 104 L 658 104 L 658 91.5 L 655 86 L 650.5 84 L 638 84 L 638 104 L 618 104 L 618 54 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 688 54 L 702.5 54 L 707 58.5 L 708 61.5 L 708 74 L 741.5 74 L 747 78.5 L 748 80.5 L 748 96.5 L 744.5 102 L 740.5 104 L 693.5 104 L 689 100.5 L 688 98.5 L 688 54 Z M 708 84 L 708 94 L 721 94 L 723 93 L 728 87 L 728 84 L 708 84 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 753 54 L 766.5 54 L 772 58.5 L 773 60.5 L 773 104 L 760.5 104 L 755 101 L 753 96.5 L 753 54 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 788.5 54 L 836.5 54 L 841 57.5 L 843 61.5 L 843 76.5 L 837.5 83 L 835.5 84 L 803 84 Q 802.1 89.9 806.5 92 L 810.5 94 L 843 94 Q 843.6 99.3 839.5 102 L 835.5 104 L 789.5 104 L 784 99.5 L 783 97.5 L 783 60.5 L 788.5 54 Z M 803 64 L 803 74 L 823 74 L 821 68 L 817 64 L 803 64 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 79.5 72 L 75.5 77 L 79.5 72 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 636 113 L 655.5 113 L 656 113.5 L 656 177.5 L 660.5 183 L 663.5 184 L 676 184 L 676 113.5 L 676.5 113 L 696 113 L 696 193.5 L 695.5 194 L 676 194 L 675.5 187 L 670.5 193 L 668.5 194 L 642.5 194 L 637 189.5 L 636 187.5 L 636 113 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 706 144 L 726 144 L 726 157.5 L 729.5 162 L 733.5 164 L 746 164 L 746 144 L 766 144 L 766 194 L 746 194 L 746 181.5 L 743 176 L 738.5 174 L 726 174 L 726 194 L 706 194 L 706 144 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 781.5 144 L 829.5 144 L 834 147.5 L 836 151.5 L 836 164 L 816.5 164 L 816 161.5 L 812.5 156 L 809.5 154 L 796 154 L 796 177.5 L 799.5 182 L 803.5 184 L 816 184 L 816 174 L 836 174 L 836 186.5 L 832.5 192 L 828.5 194 L 782.5 194 L 777 189.5 L 776 187.5 L 776 150.5 L 781.5 144 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 841 144 L 895.5 144 L 900 147.5 L 902 154 L 881 154 L 881 194 L 861 194 L 861 154.5 L 860.5 154 L 849.5 154 L 842 148.5 L 841 144 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 912.5 144 L 960.5 144 L 966 148.5 L 967 151.5 L 967 186.5 L 964 192 L 959.5 194 L 927 194 L 927 224 L 907 224 L 907 149.5 L 912.5 144 Z M 927 154 L 927 178 L 928 180 L 935 184 L 947 184 L 947 162 L 945 158 L 941 154 L 927 154 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 977 144 L 997 144 L 997 177.5 L 1000.5 182 L 1004.5 184 L 1017 184 L 1017 144 L 1037 144 L 1037 216.5 L 1033.5 222 L 1030.5 224 L 983.5 224 L 978 219.5 L 977 217.5 L 977 204 L 996.5 204 L 997 207.5 L 1001.5 213 L 1003.5 214 L 1017 214 L 1017 201.5 L 1011.5 195 L 1009.5 194 L 983.5 194 L 978 189.5 L 977 187.5 L 977 144 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 1047 144 L 1064.5 144 L 1069 147.5 L 1081.5 173 L 1094 148.5 L 1098.5 144 L 1117 144 L 1117 194 L 1097 194 L 1097 160.5 L 1096 160.5 L 1085 184 L 1079.5 184 L 1079 182.5 L 1067.5 160 L 1067 194 L 1047 194 L 1047 144 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 1132.5 144 L 1180.5 144 L 1185 147.5 L 1187 151.5 L 1187 166.5 L 1181.5 173 L 1179.5 174 L 1147 174 Q 1146.1 179.9 1150.5 182 L 1154.5 184 L 1187 184 Q 1187.6 189.3 1183.5 192 L 1179.5 194 L 1133.5 194 L 1128 189.5 L 1127 187.5 L 1127 150.5 L 1132.5 144 Z M 1147 154 L 1147 164 L 1167 164 L 1165 158 L 1161 154 L 1147 154 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 1197 144 L 1217 144 L 1217 157.5 L 1220.5 162 L 1224.5 164 L 1237 164 L 1237 144 L 1257 144 L 1257 194 L 1237 194 L 1237 181.5 L 1234 176 L 1229.5 174 L 1217 174 L 1217 194 L 1197 194 L 1197 144 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 1262 144 L 1316.5 144 L 1321 147.5 L 1323 154 L 1302 154 L 1302 194 L 1282 194 L 1282 154.5 L 1281.5 154 L 1270.5 154 L 1263 148.5 L 1262 144 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 1328 144 L 1342.5 144 L 1347 148.5 L 1348 151.5 L 1348 164 L 1381.5 164 L 1387 168.5 L 1388 170.5 L 1388 186.5 L 1384.5 192 L 1380.5 194 L 1333.5 194 L 1329 190.5 L 1328 188.5 L 1328 144 Z M 1348 174 L 1348 184 L 1361 184 L 1363 183 L 1368 177 L 1368 174 L 1348 174 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="1" d="M 1393 144 L 1406.5 144 L 1412 148.5 L 1413 150.5 L 1413 194 L 1400.5 194 L 1395 191 L 1393 186.5 L 1393 144 Z "/>
+                    </svg>
+                    <!-- Русский тёмный (белый на тёмном) -->
+                    <svg class="logo-svg logo-dark" xmlns="http://www.w3.org/2000/svg" width="1430" height="230" viewBox="0 0 1430 230" style="height:40px; width:auto;">
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="M 0 0 L 1429.5 0 L 1430 0.5 L 1430 230 L 0.5 230 L 0 229.5 L 0 0 Z M 109 1 L 105 2 L 102 5 L 101 18 L 99 25 L 95 27 L 84 29 L 73 15 L 70 12 L 53 20 L 50 24 Q 51 35 56 42 L 55 48 L 46 56 L 43 56 L 31 50 L 24 50 L 18 58 L 13 70 L 29 84 L 29 89 L 26 99 L 19 102 L 8 102 L 6 103 L 2 108 Q 1 118 3 126 L 6 128 L 10 129 L 18 129 L 26 131 L 30 145 L 29 148 L 17 157 L 13 162 L 21 178 L 26 181 L 29 181 L 45 173 L 54 180 L 57 186 L 50 203 L 51 208 L 67 217 L 72 216 L 84 200 L 98 203 L 100 206 L 102 225 L 108 228 Q 114 225 125 227 L 128 223 L 128 213 L 130 205 L 132 203 L 146 200 L 156 215 L 160 217 L 163 217 L 178 208 L 179 206 L 179 202 L 172 186 L 183 174 L 188 174 L 201 181 L 205 181 L 216 163 L 215 160 L 200 148 L 200 142 L 203 131 L 212 129 L 224 128 L 227 123 Q 228 112 226 105 L 221 102 L 206 101 Q 200 95 200 84 L 210 76 L 216 69 L 206 50 L 200 50 L 187 56 L 184 56 L 173 46 L 174 40 L 179 29 L 179 23 L 163 12 L 157 13 L 146 29 L 130 25 L 129 23 L 127 4 L 124 1 L 109 1 Z M 261 23 L 261 104 L 281 104 L 281 104 L 281 34 L 295 34 L 297 35 L 301 42 L 301 104 L 302 104 L 321 104 L 321 31 L 320 29 Q 317 24 311 23 L 261 23 Z M 337 54 L 331 61 L 331 98 L 332 100 L 338 104 L 384 104 L 388 102 L 391 97 L 391 62 L 389 58 L 385 54 L 337 54 Z M 415 54 L 413 55 L 408 61 L 408 84 L 403 85 L 398 91 L 398 104 L 421 104 L 425 102 L 428 97 L 428 72 L 429 69 L 435 64 L 448 64 L 448 104 L 468 104 L 468 54 L 415 54 Z M 484 54 L 478 61 L 478 98 L 479 100 L 485 104 L 531 104 L 535 102 Q 539 99 538 94 L 506 94 L 502 92 Q 497 90 498 84 L 531 84 L 533 83 L 538 77 L 538 62 L 536 58 L 532 54 L 484 54 Z M 554 54 L 548 60 L 548 74 L 568 74 L 568 64 L 582 64 L 584 65 L 588 72 L 588 84 L 568 84 L 568 94 L 581 94 L 583 95 L 588 102 L 588 124 L 575 124 L 573 123 L 568 118 L 568 114 L 548 114 L 548 128 L 549 130 L 555 134 L 601 134 L 605 132 L 608 127 L 608 92 L 606 88 L 600 84 L 603 83 L 608 77 L 608 62 L 607 59 L 602 54 L 554 54 Z M 618 54 L 618 104 L 638 104 L 638 84 L 651 84 L 655 86 L 658 92 L 658 104 L 678 104 L 678 54 L 658 54 L 658 74 L 646 74 L 642 72 L 638 68 L 638 54 L 618 54 Z M 688 54 L 688 99 L 689 101 L 694 104 L 741 104 L 745 102 L 748 97 L 748 81 L 747 79 L 742 74 L 708 74 L 708 62 L 707 59 L 703 54 L 688 54 Z M 753 54 L 753 97 L 755 101 L 761 104 L 773 104 L 773 61 L 772 59 L 767 54 L 753 54 Z M 789 54 L 783 61 L 783 98 L 784 100 L 790 104 L 836 104 L 840 102 Q 844 99 843 94 L 811 94 L 807 92 Q 802 90 803 84 L 836 84 L 838 83 L 843 77 L 843 62 L 841 58 L 837 54 L 789 54 Z M 636 113 L 636 188 L 637 190 L 643 194 L 669 194 L 671 193 L 676 187 L 676 194 L 696 194 L 696 194 L 696 113 L 677 113 L 676 114 L 676 184 L 664 184 L 661 183 L 656 178 L 656 114 L 656 113 L 636 113 Z M 706 144 L 706 194 L 726 194 L 726 174 L 739 174 L 743 176 L 746 182 L 746 194 L 766 194 L 766 144 L 746 144 L 746 164 L 734 164 L 730 162 L 726 158 L 726 144 L 706 144 Z M 782 144 L 776 151 L 776 188 L 777 190 L 783 194 L 829 194 L 833 192 L 836 187 L 836 174 L 816 174 L 816 184 L 804 184 L 800 182 L 796 178 L 796 154 L 810 154 L 813 156 L 816 162 L 817 164 L 836 164 L 836 152 L 834 148 L 830 144 L 782 144 Z M 841 144 L 842 149 L 850 154 L 861 154 L 861 155 L 861 194 L 881 194 L 881 154 L 902 154 L 900 148 L 896 144 L 841 144 Z M 913 144 L 907 150 L 907 224 L 927 224 L 927 194 L 960 194 L 964 192 L 967 187 L 967 152 L 966 149 L 961 144 L 913 144 Z M 977 144 L 977 188 L 978 190 L 984 194 L 1010 194 L 1012 195 L 1017 202 L 1017 214 L 1004 214 L 1002 213 L 997 208 L 997 204 L 977 204 L 977 218 L 978 220 L 984 224 L 1031 224 L 1034 222 L 1037 217 L 1037 144 L 1017 144 L 1017 184 L 1005 184 L 1001 182 L 997 178 L 997 144 L 977 144 Z M 1047 144 L 1047 194 L 1067 194 L 1068 160 L 1079 183 L 1080 184 L 1085 184 L 1096 161 L 1097 161 L 1097 194 L 1117 194 L 1117 144 L 1099 144 L 1094 149 L 1082 173 L 1069 148 L 1065 144 L 1047 144 Z M 1133 144 L 1127 151 L 1127 188 L 1128 190 L 1134 194 L 1180 194 L 1184 192 Q 1188 189 1187 184 L 1155 184 L 1151 182 Q 1146 180 1147 174 L 1180 174 L 1182 173 L 1187 167 L 1187 152 L 1185 148 L 1181 144 L 1133 144 Z M 1197 144 L 1197 194 L 1217 194 L 1217 174 L 1230 174 L 1234 176 L 1237 182 L 1237 194 L 1257 194 L 1257 144 L 1237 144 L 1237 164 L 1225 164 L 1221 162 L 1217 158 L 1217 144 L 1197 144 Z M 1262 144 L 1263 149 L 1271 154 L 1282 154 L 1282 155 L 1282 194 L 1302 194 L 1302 154 L 1323 154 L 1321 148 L 1317 144 L 1262 144 Z M 1328 144 L 1328 189 L 1329 191 L 1334 194 L 1381 194 L 1385 192 L 1388 187 L 1388 171 L 1387 169 L 1382 164 L 1348 164 L 1348 152 L 1347 149 L 1343 144 L 1328 144 Z M 1393 144 L 1393 187 L 1395 191 L 1401 194 L 1413 194 L 1413 151 L 1412 149 L 1407 144 L 1393 144 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="M 110.5 59 L 118.5 59 L 132.5 62 Q 144.7 66.8 153 75.5 Q 162.9 85.1 167 100.5 Q 169.8 109.2 168 122.5 L 165 133.5 L 154 151 L 134.5 164 L 123.5 167 L 105.5 167 Q 84.4 162.6 73 148.5 Q 65.6 139.9 62 127.5 L 61 106.5 Q 65.2 84.2 79.5 72 L 96.5 62 L 110.5 59 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="M 351 64 L 364.5 64 L 369 67.5 L 371 71.5 L 371 94 L 358.5 94 L 352 89.5 L 351 87.5 L 351 64 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="M 498 64 L 511.5 64 L 516 67.5 L 518 74 L 498 74 L 498 64 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="M 803 64 L 816.5 64 L 821 67.5 L 823 74 L 803 74 L 803 64 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="M 708 84 L 727.5 84 L 728 86.5 L 722.5 93 L 720.5 94 L 708 94 L 708 84 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="M 927 154 L 940.5 154 L 945 157.5 L 947 161.5 L 947 184 L 934.5 184 L 928 179.5 L 927 177.5 L 927 154 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="M 1147 154 L 1160.5 154 L 1165 157.5 L 1167 164 L 1147 164 L 1147 154 Z "/>
+                        <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="M 1348 174 L 1367.5 174 L 1368 176.5 L 1362.5 183 L 1360.5 184 L 1348 184 L 1348 174 Z "/>
+                        <path fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" opacity="0.996078431372549" d="M 108.5 1 L 123.5 1 L 127 3.5 L 129 22.5 L 130 25 L 145.5 29 L 157 13 L 162.5 12 L 179 22.5 L 179 28.5 L 174 39.5 L 173 45.5 L 183.5 56 L 186.5 56 L 199.5 50 L 205.5 50 L 216 68.5 L 209.5 76 L 200 83.5 Q 199.9 95.1 205.5 101 L 220.5 102 L 226 104.5 Q 228.4 111.6 227 122.5 L 223.5 128 L 211.5 129 L 203 131 L 200 141.5 L 200 147.5 L 215 159.5 L 216 162.5 L 204.5 181 L 200.5 181 L 187.5 174 L 182.5 174 L 172 185.5 L 179 201.5 L 179 205.5 L 178 208 L 162.5 217 L 159.5 217 L 156 214.5 L 145.5 200 L 131.5 203 L 130 204.5 L 128 212.5 L 128 222.5 L 124.5 227 Q 113.8 225.3 107.5 228 L 102 224.5 L 100 205.5 L 97.5 203 L 83.5 200 L 71.5 216 L 66.5 217 L 51 208 L 50 202.5 L 57 185.5 L 53.5 180 L 44.5 173 L 28.5 181 L 25.5 181 L 21 177.5 L 13 161.5 L 16.5 157 L 29 147.5 L 30 144.5 L 26 131 L 17.5 129 L 9.5 129 L 5.5 128 L 3 125.5 Q 0.6 118.4 2 107.5 L 5.5 103 L 7.5 102 L 18.5 102 L 26 98.5 L 29 88.5 L 29 83.5 L 13 69.5 L 18 57.5 L 23.5 50 L 30.5 50 L 42.5 56 L 45.5 56 L 55 48 L 56 41.5 Q 51 34.5 50 23.5 L 52.5 20 L 69.5 12 L 73 14.5 L 83.5 29 L 94.5 27 L 99 24.5 L 101 17.5 L 102 4.5 L 104.5 2 L 108.5 1 Z M 111 59 L 97 62 L 80 72 Q 65 84 61 107 L 62 128 Q 66 140 73 149 Q 84 163 106 167 L 124 167 L 135 164 L 154 151 L 165 134 L 168 123 Q 170 109 167 101 Q 163 85 153 76 Q 145 67 133 62 L 119 59 L 111 59 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 261 23 L 310.5 23 Q 317.1 23.9 320 28.5 L 321 30.5 L 321 104 L 301.5 104 L 301 103.5 L 301 41.5 L 296.5 35 L 294.5 34 L 281 34 L 281 103.5 L 280.5 104 L 261 104 L 261 23 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 336.5 54 L 384.5 54 L 389 57.5 L 391 61.5 L 391 96.5 L 387.5 102 L 383.5 104 L 337.5 104 L 332 99.5 L 331 97.5 L 331 60.5 L 336.5 54 Z M 351 64 L 351 88 L 352 90 L 359 94 L 371 94 L 371 72 L 369 68 L 365 64 L 351 64 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 414.5 54 L 468 54 L 468 104 L 448 104 L 448 64 L 434.5 64 L 429 68.5 L 428 71.5 L 428 96.5 L 424.5 102 L 420.5 104 L 398 104 L 398 90.5 L 402.5 85 L 408 84 L 408 60.5 L 412.5 55 L 414.5 54 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 483.5 54 L 531.5 54 L 536 57.5 L 538 61.5 L 538 76.5 L 532.5 83 L 530.5 84 L 498 84 Q 497.1 89.9 501.5 92 L 505.5 94 L 538 94 Q 538.6 99.3 534.5 102 L 530.5 104 L 484.5 104 L 479 99.5 L 478 97.5 L 478 60.5 L 483.5 54 Z M 498 64 L 498 74 L 518 74 L 516 68 L 512 64 L 498 64 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 553.5 54 L 601.5 54 L 607 58.5 L 608 61.5 L 608 76.5 L 602.5 83 L 600 83.5 L 606 87.5 L 608 91.5 L 608 126.5 L 604.5 132 L 600.5 134 L 554.5 134 L 549 129.5 L 548 127.5 L 548 114 L 567.5 114 L 568 117.5 L 572.5 123 L 574.5 124 L 588 124 L 588 101.5 L 582.5 95 L 580.5 94 L 568 94 L 568 84 L 588 84 L 588 71.5 L 583.5 65 L 581.5 64 L 568 64 L 568 74 L 548 74 L 548 59.5 L 553.5 54 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 618 54 L 638 54 L 638 67.5 L 641.5 72 L 645.5 74 L 658 74 L 658 54 L 678 54 L 678 104 L 658 104 L 658 91.5 L 655 86 L 650.5 84 L 638 84 L 638 104 L 618 104 L 618 54 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 688 54 L 702.5 54 L 707 58.5 L 708 61.5 L 708 74 L 741.5 74 L 747 78.5 L 748 80.5 L 748 96.5 L 744.5 102 L 740.5 104 L 693.5 104 L 689 100.5 L 688 98.5 L 688 54 Z M 708 84 L 708 94 L 721 94 L 723 93 L 728 87 L 728 84 L 708 84 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 753 54 L 766.5 54 L 772 58.5 L 773 60.5 L 773 104 L 760.5 104 L 755 101 L 753 96.5 L 753 54 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 788.5 54 L 836.5 54 L 841 57.5 L 843 61.5 L 843 76.5 L 837.5 83 L 835.5 84 L 803 84 Q 802.1 89.9 806.5 92 L 810.5 94 L 843 94 Q 843.6 99.3 839.5 102 L 835.5 104 L 789.5 104 L 784 99.5 L 783 97.5 L 783 60.5 L 788.5 54 Z M 803 64 L 803 74 L 823 74 L 821 68 L 817 64 L 803 64 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 636 113 L 655.5 113 L 656 113.5 L 656 177.5 L 660.5 183 L 663.5 184 L 676 184 L 676 113.5 L 676.5 113 L 696 113 L 696 193.5 L 695.5 194 L 676 194 L 675.5 187 L 670.5 193 L 668.5 194 L 642.5 194 L 637 189.5 L 636 187.5 L 636 113 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 706 144 L 726 144 L 726 157.5 L 729.5 162 L 733.5 164 L 746 164 L 746 144 L 766 144 L 766 194 L 746 194 L 746 181.5 L 743 176 L 738.5 174 L 726 174 L 726 194 L 706 194 L 706 144 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 781.5 144 L 829.5 144 L 834 147.5 L 836 151.5 L 836 164 L 816.5 164 L 816 161.5 L 812.5 156 L 809.5 154 L 796 154 L 796 177.5 L 799.5 182 L 803.5 184 L 816 184 L 816 174 L 836 174 L 836 186.5 L 832.5 192 L 828.5 194 L 782.5 194 L 777 189.5 L 776 187.5 L 776 150.5 L 781.5 144 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 841 144 L 895.5 144 L 900 147.5 L 902 154 L 881 154 L 881 194 L 861 194 L 861 154.5 L 860.5 154 L 849.5 154 L 842 148.5 L 841 144 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 912.5 144 L 960.5 144 L 966 148.5 L 967 151.5 L 967 186.5 L 964 192 L 959.5 194 L 927 194 L 927 224 L 907 224 L 907 149.5 L 912.5 144 Z M 927 154 L 927 178 L 928 180 L 935 184 L 947 184 L 947 162 L 945 158 L 941 154 L 927 154 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 977 144 L 997 144 L 997 177.5 L 1000.5 182 L 1004.5 184 L 1017 184 L 1017 144 L 1037 144 L 1037 216.5 L 1033.5 222 L 1030.5 224 L 983.5 224 L 978 219.5 L 977 217.5 L 977 204 L 996.5 204 L 997 207.5 L 1001.5 213 L 1003.5 214 L 1017 214 L 1017 201.5 L 1011.5 195 L 1009.5 194 L 983.5 194 L 978 189.5 L 977 187.5 L 977 144 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 1047 144 L 1064.5 144 L 1069 147.5 L 1081.5 173 L 1094 148.5 L 1098.5 144 L 1117 144 L 1117 194 L 1097 194 L 1097 160.5 L 1096 160.5 L 1085 184 L 1079.5 184 L 1079 182.5 L 1067.5 160 L 1067 194 L 1047 194 L 1047 144 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 1132.5 144 L 1180.5 144 L 1185 147.5 L 1187 151.5 L 1187 166.5 L 1181.5 173 L 1179.5 174 L 1147 174 Q 1146.1 179.9 1150.5 182 L 1154.5 184 L 1187 184 Q 1187.6 189.3 1183.5 192 L 1179.5 194 L 1133.5 194 L 1128 189.5 L 1127 187.5 L 1127 150.5 L 1132.5 144 Z M 1147 154 L 1147 164 L 1167 164 L 1165 158 L 1161 154 L 1147 154 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 1197 144 L 1217 144 L 1217 157.5 L 1220.5 162 L 1224.5 164 L 1237 164 L 1237 144 L 1257 144 L 1257 194 L 1237 194 L 1237 181.5 L 1234 176 L 1229.5 174 L 1217 174 L 1217 194 L 1197 194 L 1197 144 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 1262 144 L 1316.5 144 L 1321 147.5 L 1323 154 L 1302 154 L 1302 194 L 1282 194 L 1282 154.5 L 1281.5 154 L 1270.5 154 L 1263 148.5 L 1262 144 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 1328 144 L 1342.5 144 L 1347 148.5 L 1348 151.5 L 1348 164 L 1381.5 164 L 1387 168.5 L 1388 170.5 L 1388 186.5 L 1384.5 192 L 1380.5 194 L 1333.5 194 L 1329 190.5 L 1328 188.5 L 1328 144 Z M 1348 174 L 1348 184 L 1361 184 L 1363 183 L 1368 177 L 1368 174 L 1348 174 Z "/>
+                        <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 1393 144 L 1406.5 144 L 1412 148.5 L 1413 150.5 L 1413 194 L 1400.5 194 L 1395 191 L 1393 186.5 L 1393 144 Z "/>
+                    </svg>
+                </div>
+            </a>
             <div class="header-controls">
                 <div class="lang-switch">
-                    <a href="/" class="lang-btn" data-lang="ru" aria-label="Русский">
-                        <svg width="32" height="24" viewBox="0 0 640 480"><path fill="#fff" d="M0 0h640v160H0z"/><path fill="#0039a6" d="M0 160h640v160H0z"/><path fill="#d52b1e" d="M0 320h640v160H0z"/></svg>
-                    </a>
-                    <a href="/en/" class="lang-btn active" data-lang="en" aria-label="English">
-                        <svg width="32" height="24" viewBox="0 0 640 480"><path fill="#012169" d="M0 0h640v480H0z"/><path fill="#FFF" d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0z"/><path fill="#C8102E" d="m424 281 216 159v40L369 281zm-184 20 6 35L54 480H0zM640 0v3L391 191l2-44L590 0zM0 0l239 176h-60L0 42z"/><path fill="#FFF" d="M241 0v480h160V0zM0 160v160h640V160z"/><path fill="#C8102E" d="M0 193v96h640v-96zM273 0v480h96V0z"/></svg>
-                    </a>
+                    <a href="/" class="lang-btn active"><svg width="32" height="24" viewBox="0 0 640 480"><path fill="#fff" d="M0 0h640v160H0z"/><path fill="#0039a6" d="M0 160h640v160H0z"/><path fill="#d52b1e" d="M0 320h640v160H0z"/></svg></a>
+                    <a href="/en/" class="lang-btn"><svg width="32" height="24" viewBox="0 0 640 480"><path fill="#012169" d="M0 0h640v480H0z"/><path fill="#FFF" d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0z"/><path fill="#C8102E" d="m424 281 216 159v40L369 281zm-184 20 6 35L54 480H0zM640 0v3L391 191l2-44L590 0zM0 0l239 176h-60L0 42z"/><path fill="#FFF" d="M241 0v480h160V0zM0 160v160h640V160z"/><path fill="#C8102E" d="M0 193v96h640v-96zM273 0v480h96V0z"/></svg></a>
                 </div>
                 <div class="theme-switch">
-                    <button class="theme-toggle" aria-label="Switch theme">
-                        <span class="toggle-slider"></span>
-                    </button>
+                    <button class="theme-toggle" aria-label="Переключить тему"><span class="toggle-slider"></span></button>
                 </div>
             </div>
         </div>
     </header>
-
     <main class="main">
         <div class="container">
             <section class="intro">
-                <h1>Useful Tools</h1>
-                <p>Calculators, generators and converters for any task – always at hand</p>
+                <h1>Полезные инструменты</h1>
+                <p>Калькуляторы, генераторы и конвертеры для любых задач – всегда под рукой</p>
             </section>
             <div class="tools-grid" id="tools-grid"></div>
         </div>
     </main>
-
     <footer class="footer glass">
-        <div class="container">
-            <p>&copy; 2026 Useful Tools. All rights reserved.</p>
-        </div>
+        <div class="container"><p>&copy; 2026 Полезные инструменты. Все права защищены.</p></div>
     </footer>
-
-    <script src="../js/script.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            initTools('en');
-            initTheme();
-        });
-    </script>
+    <script src="js/script.js"></script>
+    <script>document.addEventListener('DOMContentLoaded',()=>{initTools('ru');initTheme();});</script>
 </body>
 </html>
