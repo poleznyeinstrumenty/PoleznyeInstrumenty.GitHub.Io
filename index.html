@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Полезные инструменты | Калькуляторы, генераторы, конвертеры</title>
+    <meta name="description" content="Бесплатные онлайн инструменты: калькулятор процентов, ИМТ, конвертер валют, генератор паролей и 20+ других. Работает на любых устройствах.">
+    <meta name="keywords" content="калькулятор, конвертер, генератор, инструменты, онлайн, ИМТ, проценты, возраст, QR код, пароль">
+    <meta name="author" content="Poleznye Instrumenty">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://poleznyeinstrumenty.github.io/">
+    <!-- hreflang -->
+    <link rel="alternate" hreflang="ru" href="https://poleznyeinstrumenty.github.io/">
+    <link rel="alternate" hreflang="en" href="https://poleznyeinstrumenty.github.io/en/">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Полезные инструменты">
+    <meta property="og:description" content="20+ бесплатных онлайн инструментов: калькуляторы, конвертеры, генераторы. Смена темы, адаптив, два языка.">
+    <meta property="og:image" content="https://poleznyeinstrumenty.github.io/images/og-image.png">
+    <meta property="og:url" content="https://poleznyeinstrumenty.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Полезные инструменты">
+    <meta name="twitter:description" content="20+ онлайн инструментов для любых задач">
+    <meta name="twitter:image" content="https://poleznyeinstrumenty.github.io/images/og-image.png">
+    <!-- Schema.org (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Полезные инструменты",
+      "url": "https://poleznyeinstrumenty.github.io/",
+      "description": "Коллекция бесплатных онлайн инструментов",
+      "inLanguage": "ru",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://poleznyeinstrumenty.github.io/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <!-- 60 favicon (сокращённая версия, в реальном проекте вставьте все 60 строк) -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+    <!-- ... остальные 56 иконок добавьте аналогично ... -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="system">
+    <header class="header glass">
+        <div class="container header__inner">
+            <!-- Логотип SVG (меняется темой и языком) -->
+            <div class="logo" id="logo">
+                <svg class="logo-svg logo-light" xmlns="http://www.w3.org/2000/svg" width="1430" height="230" viewBox="0 0 1430 230"><path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="..."/></svg>
+                <svg class="logo-svg logo-dark" xmlns="http://www.w3.org/2000/svg" width="1430" height="230" viewBox="0 0 1430 230"><path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="..."/></svg>
+            </div>
+            <div class="header-controls">
+                <!-- Переключатель языка (флаги) -->
+                <div class="lang-switch">
+                    <a href="/" class="lang-btn active" data-lang="ru" aria-label="Русский">
+                        <svg width="32" height="24" viewBox="0 0 640 480"><path fill="#fff" d="M0 0h640v160H0z"/><path fill="#0039a6" d="M0 160h640v160H0z"/><path fill="#d52b1e" d="M0 320h640v160H0z"/></svg>
+                    </a>
+                    <a href="/en/" class="lang-btn" data-lang="en" aria-label="English">
+                        <svg width="32" height="24" viewBox="0 0 640 480"><path fill="#012169" d="M0 0h640v480H0z"/><path fill="#FFF" d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0z"/><path fill="#C8102E" d="m424 281 216 159v40L369 281zm-184 20 6 35L54 480H0zM640 0v3L391 191l2-44L590 0zM0 0l239 176h-60L0 42z"/><path fill="#FFF" d="M241 0v480h160V0zM0 160v160h640V160z"/><path fill="#C8102E" d="M0 193v96h640v-96zM273 0v480h96V0z"/></svg>
+                    </a>
+                </div>
+                <!-- Toggle темы (ползунок) -->
+                <div class="theme-switch">
+                    <button class="theme-toggle" aria-label="Переключить тему">
+                        <span class="toggle-slider"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="intro">
+                <h1>Полезные инструменты</h1>
+                <p>Калькуляторы, генераторы и конвертеры для любых задач — всегда под рукой</p>
+            </section>
+            <div class="tools-grid" id="tools-grid">
+                <!-- Карточки инструментов будут вставлены через JS, либо можно прописать статически. Для простоты вставим через JS. -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer glass">
+        <div class="container">
+            <p>&copy; 2026 Полезные инструменты. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Инициализация инструментов и темы
+        document.addEventListener('DOMContentLoaded', () => {
+            initTools('ru');  // передаём язык
+            initTheme();
+        });
+    </script>
+</body>
+</html>
