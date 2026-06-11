@@ -1,25 +1,130 @@
 {
   "name": "Полезные Инструменты",
   "short_name": "Инструменты",
-  "description": "Коллекция полезных онлайн-инструментов: калькуляторы, генераторы, конвертеры",
+  "description": "Бесплатные онлайн-инструменты: калькуляторы, конвертеры, генераторы паролей и многое другое. Работает без интернета.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "any",
   "background_color": "#0a0a0a",
-  "theme_color": "#1e1e2f",
+  "theme_color": "#6c63ff",
+  "lang": "ru",
+  "dir": "ltr",
+  "categories": ["utilities", "productivity", "education"],
+  "iarc_rating_id": "e58c174a-81d2-5c3b-8aa8-7e9d17e9b6ca",
+  "screenshots": [
+    {
+      "src": "/screenshot/mobile_768x1024.png",
+      "sizes": "768x1024",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Главный экран с инструментами на мобильном"
+    },
+    {
+      "src": "/screenshot/desktop_1920x1080.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Главный экран с инструментами на десктопе"
+    }
+  ],
   "icons": [
-    { "src": "/images/android-chrome-36x36.png", "sizes": "36x36", "type": "image/png" },
-    { "src": "/images/android-chrome-48x48.png", "sizes": "48x48", "type": "image/png" },
-    { "src": "/images/android-chrome-72x72.png", "sizes": "72x72", "type": "image/png" },
-    { "src": "/images/android-chrome-96x96.png", "sizes": "96x96", "type": "image/png" },
-    { "src": "/images/android-chrome-144x144.png", "sizes": "144x144", "type": "image/png" },
-    { "src": "/images/android-chrome-168x168.png", "sizes": "168x168", "type": "image/png" },
-    { "src": "/images/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/images/android-chrome-256x256.png", "sizes": "256x256", "type": "image/png" },
-    { "src": "/images/android-chrome-384x384.png", "sizes": "384x384", "type": "image/png" },
-    { "src": "/images/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" },
-    { "src": "/images/android-chrome-1024x1024.png", "sizes": "1024x1024", "type": "image/png" },
-    { "src": "/images/maskable-icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
-    { "src": "/images/maskable-icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
-    { "src": "/images/maskable-icon-1024x1024.png", "sizes": "1024x1024", "type": "image/png", "purpose": "any maskable" }
-  ]
+    {
+      "src": "/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/maskable-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/android-chrome-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/maskable-icon-1024x1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/android-chrome-1024x1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Калькулятор",
+      "short_name": "Calc",
+      "description": "Быстрый доступ к калькулятору",
+      "url": "/#calculator",
+      "icons": [
+        { "src": "/images/shortcut-calc.png", "sizes": "96x96" }
+      ]
+    },
+    {
+      "name": "Генератор паролей",
+      "short_name": "Password",
+      "description": "Создать надёжный пароль",
+      "url": "/#password",
+      "icons": [
+        { "src": "/images/shortcut-pass.png", "sizes": "96x96" }
+      ]
+    },
+    {
+      "name": "Конвертер валют",
+      "short_name": "Currency",
+      "description": "Конвертировать валюты",
+      "url": "/#currency",
+      "icons": [
+        { "src": "/images/shortcut-currency.png", "sizes": "96x96" }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
 }
