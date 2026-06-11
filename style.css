@@ -1,0 +1,322 @@
+/* style.css – Полный адаптивный glassmorphism дизайн */
+:root {
+  --glass-bg-light: rgba(255, 255, 255, 0.25);
+  --glass-bg-dark: rgba(20, 20, 30, 0.55);
+  --glass-border-light: rgba(255, 255, 255, 0.3);
+  --glass-border-dark: rgba(255, 255, 255, 0.08);
+  --text-light: #111;
+  --text-dark: #eee;
+  --bg-gradient-light: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  --bg-gradient-dark: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  --tool-bg-light: rgba(255, 255, 255, 0.35);
+  --tool-bg-dark: rgba(10, 10, 20, 0.6);
+  --accent: #6c63ff;
+  --accent-hover: #5a52e0;
+  --radius: 20px;
+  --shadow-light: 0 8px 40px rgba(0,0,0,0.08);
+  --shadow-dark: 0 8px 40px rgba(0,0,0,0.5);
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  background: var(--bg-gradient-light);
+  color: var(--text-light);
+  min-height: 100vh;
+  transition: background var(--transition), color var(--transition);
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 50%, rgba(108,99,255,0.12) 0%, transparent 50%);
+  pointer-events: none;
+  transition: opacity var(--transition);
+}
+
+/* Тёмная тема */
+body.dark {
+  background: var(--bg-gradient-dark);
+  color: var(--text-dark);
+}
+body.dark::before {
+  opacity: 0.3;
+}
+
+/* Glass-элементы */
+.glass {
+  background: var(--glass-bg-light);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid var(--glass-border-light);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-light);
+  transition: background var(--transition), border var(--transition), box-shadow var(--transition);
+}
+body.dark .glass {
+  background: var(--glass-bg-dark);
+  border-color: var(--glass-border-dark);
+  box-shadow: var(--shadow-dark);
+}
+
+/* Контейнер */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Шапка */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.logo-dark, .logo-light {
+  display: none;
+  height: 36px;
+  width: auto;
+}
+body:not(.dark) .logo-light { display: block; }
+body.dark .logo-dark { display: block; }
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.theme-switch {
+  display: flex;
+  background: var(--glass-bg-light);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 30px;
+  padding: 4px;
+  border: 1px solid var(--glass-border-light);
+  transition: all var(--transition);
+}
+body.dark .theme-switch {
+  background: var(--glass-bg-dark);
+  border-color: var(--glass-border-dark);
+}
+.theme-btn {
+  border: none;
+  background: transparent;
+  padding: 8px 14px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: inherit;
+  transition: all var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.theme-btn.active {
+  background: var(--accent);
+  color: white;
+  box-shadow: 0 4px 12px rgba(108,99,255,0.4);
+}
+.theme-btn:hover:not(.active) {
+  background: rgba(108,99,255,0.15);
+}
+
+.lang-switch a {
+  display: inline-block;
+  width: 32px;
+  height: 24px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+}
+.lang-switch a:hover {
+  transform: scale(1.1);
+}
+.lang-switch svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Навигация по инструментам */
+.tools-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0;
+  padding: 16px;
+  background: var(--glass-bg-light);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: var(--radius);
+  border: 1px solid var(--glass-border-light);
+  transition: all var(--transition);
+}
+body.dark .tools-nav {
+  background: var(--glass-bg-dark);
+  border-color: var(--glass-border-dark);
+}
+.tools-nav a {
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 16px;
+  border-radius: 30px;
+  background: rgba(108,99,255,0.1);
+  transition: all var(--transition);
+  font-weight: 500;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+.tools-nav a:hover {
+  background: var(--accent);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Сетка инструментов */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin: 32px 0;
+}
+.tool-card {
+  padding: 20px;
+  background: var(--tool-bg-light);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-radius: var(--radius);
+  border: 1px solid var(--glass-border-light);
+  box-shadow: var(--shadow-light);
+  transition: all var(--transition);
+}
+body.dark .tool-card {
+  background: var(--tool-bg-dark);
+  border-color: var(--glass-border-dark);
+  box-shadow: var(--shadow-dark);
+}
+.tool-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+.tool-card p {
+  opacity: 0.8;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+.tool-card button, .tool-card input, .tool-card select {
+  font-family: inherit;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: inherit;
+  font-size: 0.9rem;
+  outline: none;
+  transition: all var(--transition);
+}
+body.dark .tool-card button,
+body.dark .tool-card input,
+body.dark .tool-card select {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.15);
+}
+.tool-card button {
+  cursor: pointer;
+  background: var(--accent);
+  color: white;
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(108,99,255,0.3);
+}
+.tool-card button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(108,99,255,0.4);
+}
+.tool-card .result {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+  .tools-nav {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+}
+
+/* Футер */
+.footer {
+  text-align: center;
+  padding: 32px 0;
+  opacity: 0.7;
+  font-size: 0.85rem;
+  margin-top: 40px;
+  border-top: 1px solid var(--glass-border-light);
+}
+body.dark .footer {
+  border-top-color: var(--glass-border-dark);
+}
+
+/* Стили для страниц ошибок */
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+}
+.error-page h1 {
+  font-size: 5rem;
+  background: linear-gradient(45deg, #6c63ff, #ff6584);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.error-page a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
