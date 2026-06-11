@@ -51,7 +51,6 @@ body::before {
   transition: opacity var(--transition);
 }
 
-/* Тёмная тема */
 body.dark {
   background: var(--bg-gradient-dark);
   color: var(--text-dark);
@@ -100,6 +99,9 @@ body.dark .glass {
   align-items: center;
   flex-shrink: 0;
 }
+.logo-link {
+  display: contents;   /* не ломает flex */
+}
 .logo-dark, .logo-light {
   display: none;
   height: 36px;
@@ -135,17 +137,27 @@ body.dark .theme-switch {
   padding: 8px 14px;
   border-radius: 30px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: inherit;
   transition: all var(--transition);
   display: flex;
   align-items: center;
   gap: 6px;
 }
+.theme-btn svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+body:not(.dark) .theme-btn svg { color: #000; }
+body.dark .theme-btn svg { color: #fff; }
 .theme-btn.active {
   background: var(--accent);
   color: white;
   box-shadow: 0 4px 12px rgba(108,99,255,0.4);
+}
+.theme-btn.active svg {
+  color: white;
 }
 .theme-btn:hover:not(.active) {
   background: rgba(108,99,255,0.15);
@@ -234,7 +246,7 @@ body.dark .tool-card {
   margin-bottom: 16px;
   font-size: 0.9rem;
 }
-.tool-card button, .tool-card input, .tool-card select {
+.tool-card button, .tool-card input, .tool-card select, .tool-card textarea {
   font-family: inherit;
   padding: 10px 16px;
   border-radius: 12px;
@@ -246,10 +258,14 @@ body.dark .tool-card {
   font-size: 0.9rem;
   outline: none;
   transition: all var(--transition);
+  margin-bottom: 8px;
+  width: 100%;
+  box-sizing: border-box;
 }
 body.dark .tool-card button,
 body.dark .tool-card input,
-body.dark .tool-card select {
+body.dark .tool-card select,
+body.dark .tool-card textarea {
   background: rgba(255,255,255,0.1);
   border-color: rgba(255,255,255,0.15);
 }
@@ -260,6 +276,8 @@ body.dark .tool-card select {
   border: none;
   font-weight: 600;
   box-shadow: 0 4px 12px rgba(108,99,255,0.3);
+  width: auto;
+  display: inline-block;
 }
 .tool-card button:hover {
   background: var(--accent-hover);
@@ -300,7 +318,7 @@ body.dark .footer {
   border-top-color: var(--glass-border-dark);
 }
 
-/* Стили для страниц ошибок */
+/* Страницы ошибок */
 .error-page {
   display: flex;
   flex-direction: column;
