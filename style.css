@@ -145,8 +145,8 @@ body.dark .theme-switch {
   gap: 6px;
 }
 .theme-btn svg {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   flex-shrink: 0;
 }
 body:not(.dark) .theme-btn svg { color: #000; }
