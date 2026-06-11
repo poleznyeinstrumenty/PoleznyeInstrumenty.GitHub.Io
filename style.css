@@ -338,3 +338,103 @@ body.dark .footer {
   text-decoration: none;
   font-weight: 600;
 }
+
+/* Кнопка "Поделиться" */
+.share-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 16px rgba(108,99,255,0.5);
+  cursor: pointer;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.share-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 24px rgba(108,99,255,0.7);
+}
+.share-btn svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+/* Панель с иконками */
+.share-panel {
+  position: fixed;
+  bottom: 90px;
+  right: 24px;
+  background: var(--glass-bg-light);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid var(--glass-border-light);
+  border-radius: 20px;
+  padding: 16px;
+  display: none;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 360px;
+  z-index: 999;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+  transition: opacity 0.3s ease;
+}
+body.dark .share-panel {
+  background: var(--glass-bg-dark);
+  border-color: var(--glass-border-dark);
+}
+.share-panel.visible {
+  display: flex;
+}
+.share-panel a,
+.share-panel button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.15);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: inherit;
+  text-decoration: none;
+}
+body.dark .share-panel a,
+body.dark .share-panel button {
+  background: rgba(255,255,255,0.1);
+}
+.share-panel a:hover,
+.share-panel button:hover {
+  background: var(--accent);
+  transform: translateY(-3px);
+}
+.share-panel svg {
+  width: 24px;
+  height: 24px;
+}
+/* Для кнопки копирования */
+.copy-tooltip {
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  color: white;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
